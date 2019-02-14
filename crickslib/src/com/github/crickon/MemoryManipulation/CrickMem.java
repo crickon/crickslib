@@ -15,6 +15,10 @@ public class CrickMem
 		this.processID = MemoryManipulation.getProcessId(processString);
 		this.process = MemoryManipulation.openProcessId(this.processID);
 	}
+	public int getProcessID()
+	{
+		return this.processID;
+	}
 
 	public int readInt(long address)
 	{
